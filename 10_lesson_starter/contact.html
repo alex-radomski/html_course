@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>LTS Opening Hours</title>
+    <title>LTS Contact Us</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
@@ -12,40 +12,51 @@
         <h1>Contact Us</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="">About LTS</a></li>
+                <li><a href="/10_lesson_starter/">Home</a></li>
+                <li><a href="index.html#about">About <abbr title="The Little Taco Shop">LTS</abbr></a></li>
                 <li><a href="index.html#menu">Our Menu</a></li>
                 <li><a href="hours.html">Store Hours</a></li>
             </ul>
         </nav>
         <figure>
-            <img src="img/tacos_close_up_400x260.png" alt="A close up picture of Tacos">
+            <img src="img/tacos_close_up_400x260.png" alt="A close up picture of Tacos" width="400" height="260">
             <figcaption>Little Taco Shop Tacos</figcaption>
         </figure>
     </header>
 
     <main>
-        <h2>Our Contact Form</h2>
-        <form action="https://httpbin.org/get" method="get">
-            <fieldset>
-                <legend>Send Us A Message</legend>
-                <label for="name">Name:</label>
-                <input type="text" id="name">
-                <br>
-                <label for="email">Email:</label>
-                <input type="email" id="email">
-                <br>
-                <label for="message">Your Message:</label>
-                <br>
-                <textarea name="message" id="message" placeholder="Type your message here"></textarea>
-            </fieldset>
-            <button type="submit">Send</button>
-            <button type="reset">Reset</button>
-        </form>
-
-        <h2>Our Location</h2>
-        <address>555 Taco Temptation Lane, Suite T<br>Kansas City, MO 55555-5555<br><br>Phone: <a href="tel:+5555555555">555-555-5555</a></address>
-        <p><a href="#">Back to Top</a></p>
+        <section>
+            <h2>Our Contact Form</h2>
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Send Us A Message</legend>
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="your name" required>
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="your email" required>
+                    </p>
+                    <p>
+                        <label for="message">Your Message:</label>
+                        <br>
+                        <textarea name="message" id="message" placeholder="Type your message here" cols="30" rows="10"></textarea>
+                    </p>
+                </fieldset>
+                <button type="submit">Send</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+        <section>
+            <h2>Our Location</h2>
+            <address>
+                555 Taco Temptation Lane, Suite T<br>Kansas City, MO 55555-5555
+                <br><br>
+                Phone: <a href="tel:+5555555555">555-555-5555</a>
+            </address>
+            <p><a href="#">Back to Top</a></p>
+        </section>
     </main>
     <hr>
     <footer>
